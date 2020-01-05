@@ -1,0 +1,349 @@
+/*////////////////////////////////////////////////////////////////
+[ Background color ]*/
+
+body {
+  background: black;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+[ Fonts ]*/
+
+@font-face {
+  font-family: Lato-Thin;
+  src: url('../fonts/Lato/Lato-Thin.ttf'); 
+}
+
+@font-face {
+  font-family: Roboto-Black;
+  src: url('../fonts/Roboto/Roboto-Black.ttf'); 
+}
+
+/*////////////////////////////////////////////////////////////////
+[ Name & title ]*/
+
+.myName{
+  font-family: Roboto-Black;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  /* text-align: center; */
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 3px;
+}
+
+/*////////////////////////////////////////////////////////////////
+[ Coming Soon text ]*/
+
+.titleCS {
+  position: absolute;
+  text-align: center;
+  top: 22%;
+  left: 27%;
+  /* padding-bottom: 60px; */
+  font-family: Lato-Thin;
+  font-size: 4em;
+  line-height: 1.1;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  z-index: 3;
+}
+
+/*////////////////////////////////////////////////////////////////
+[ Animation ]*/
+
+/* each image */
+#crossfade > img { 
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  opacity: 0;
+  z-index: 0;
+  display: block;
+
+  /* blur effect + black and white filter */
+  filter: blur(2px) grayscale(1);
+  -webkit-filter: blur(2px) grayscale(1);
+
+  /* animation properties */
+  -webkit-animation: imageAnimation 36s linear infinite 0s;
+  -moz-animation: imageAnimation 36s linear infinite 0s;
+  -o-animation: imageAnimation 36s linear infinite 0s;
+  -ms-animation: imageAnimation 36s linear infinite 0s; 
+  animation: imageAnimation 36s linear infinite 0s; 
+
+}
+
+/* first image */
+#crossfade > img:nth-child(1)  {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s; 
+}
+/* second image */
+#crossfade > img:nth-child(2)  {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s; 
+
+}
+/* third image */
+#crossfade > img:nth-child(3) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s; 
+}
+/* fourth image */
+#crossfade > img:nth-child(4) {
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s; 
+}
+/* fifth image */
+#crossfade > img:nth-child(5) {
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -ms-animation-delay: 24s;
+  animation-delay: 24s; 
+
+}
+/* sixth image */
+#crossfade > img:nth-child(6) {
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s; 
+}
+
+
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0; -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0; -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1; -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0; -o-animation-timing-function: ease-in; }
+    8% { opacity: 1; -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0; -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1; -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0 ; animation-timing-function: ease-in;}
+    8% { opacity: 1 ; animation-timing-function: ease-out;}
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+  color: white;
+  /* border: 3px solid #f1f1f1; */
+  border: none;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+
+
+
+.countdown-box{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+  color: white;
+  border: none;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  text-align: center;
+
+  
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+  flex-direction: column;
+  
+  display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+  display: flex;
+  
+  -ms-align-items: center;
+	align-items: center;
+  justify-content: center;
+  
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+}
+
+.countdown-content{
+  display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+  display: flex;
+
+  
+  -webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.countdown-item{
+  display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+  display: flex;
+  
+  -ms-align-items: center;
+  align-items: center;
+  
+  -webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+  flex-direction: column;
+  
+  width: 195px;
+
+  margin-bottom: 30px;
+}
+
+.number-time{
+  font-family: Roboto-Black;
+  font-size: 120px;
+  line-height: 1;
+  color: white;
+  padding-bottom: 9px;
+  /* text-transform: uppercase; */
+}
+
+.text-time{
+  align-self: flex-start;
+  padding-left: 35px;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+[ Social media logos ]*/
+
+.logo{
+  width: 36px;
+  height: 36px;
+
+  display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+  display: flex;
+  
+  justify-content: center;
+	-ms-align-items: center;
+  align-items: center;
+  
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+#id_logos{
+  position: absolute;
+  /* font-size: 3em; */
+  left: 10%;
+  bottom: 1%;
+  color: white;
+
+  /* display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.social {
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.social:hover {
+  background-color: #fff;
+  color: #555;
+}
+
