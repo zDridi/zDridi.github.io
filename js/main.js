@@ -17,19 +17,19 @@ var countDownDate = new Date("Feb 30, 2020 00:00:00").getTime();
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   if(days.toString(10).length < 2 ){
-    days = '0'+days.toString(10);
+    days = '0' + days.toString(10);
   }
 
   if(hours.toString(10).length < 2 ){
-    hours = '0'+hours.toString(10);
+    hours = '0' + hours.toString(10);
   }
 
   if(minutes.toString(10).length < 2 ){
-    minutes = '0'+minutes.toString(10);
+    minutes = '0' + minutes.toString(10);
   }
   
   if(seconds.toString(10).length < 2 ){
-      seconds = '0'+seconds.toString(10);
+      seconds = '0' + seconds.toString(10);
   }
     
   // Output the result in 4 elements 
