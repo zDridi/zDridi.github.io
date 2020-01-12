@@ -5,7 +5,6 @@ body {
   background: black;
 }
 
-
 /*////////////////////////////////////////////////////////////////
 [ Fonts ]*/
 
@@ -28,10 +27,6 @@ body {
   top: 8%;
   left: 0;
   right: 0;
-
-  /* position: absolute;
-  top: 8%;
-  left: 25%; */
   text-align: center;
 }
 
@@ -78,15 +73,12 @@ body {
   right: 0;
   width: 60%;
   text-align: center;
-
-  /* background: rgba(196, 53, 53, 0.397); */
 }
 
 .title-coming-soon {
   position: relative;
   text-align: center;
   font-family: Lato-Thin;
-  /* font-size: 64px; */
   line-height: 1.1;
   color: whitesmoke;
   text-transform: uppercase;
@@ -268,7 +260,6 @@ body {
 		padding: 5px;
     height: 50px;
     color: #FFF;
-    /* background: red; */
 	}
 	.countdown-content {
 		width: 60%;
@@ -288,7 +279,6 @@ body {
 	}
 	
 	.countdown-item {
-		/* width: 28%; */
 		display: flex;
 		flex-flow: column wrap;
     align-self: center;
@@ -406,8 +396,6 @@ body {
 
 .fa {
   display: inline-block;
-  /* font: normal normal normal 14px/1 FontAwesome; */
-  /* font-size: inherit; */
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
