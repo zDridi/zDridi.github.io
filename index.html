@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
+    <!-- Check browser width : Temporary -->
+    <!-- jQuery -->
+    <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Check browser width : Temporary -->
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -38,59 +48,66 @@
     </div>
 
     <!-- Name & title -->
-    <div>
+    <div class="container-my-name">
         <p class="my-name">© Zied Dridi | Web developer</p>
     </div>
 
     <!-- Coming Soon -->
-    <div>
-        <h3 class="title-cs">
+    <div class="container-coming-soon">
+        <p class="title-coming-soon">
                 Coming Soon
-        </h3>
+        </p>
     </div>
 
     <!-- Countdown -->
-	<div class="countdown-box">
-		<div class="countdown-content">
-			<div class="countdown-item">
-				<span id="id_day" class="time-number"></span>
-				<span class="time-text">Days</span>
-			</div>
-			<div class="countdown-item">
-				<span id="id_hour" class="time-number"></span>
-				<span class="time-text">Hours</span>
-			</div>
-			<div class="countdown-item">
-				<span id="id_min" class="time-number"></span>
-				<span class="time-text">Minutes</span>
-			</div>
-			<div class="countdown-item">
-				<span id="id_sec" class="time-number"></span>
-				<span class="time-text">Seconds</span>
+    <div class="container-countdown-box">
+		<div class="countdown-box">
+			<div class="countdown-content">
+				<div class="countdown-item">
+					<span id="id_day" class="time-number">12</span>
+					<span class="time-text">days</span>
+				</div>
+				<div class="countdown-item">
+					<span id="id_hour" class="time-number">34</span>
+					<span class="time-text">hours</span>
+				</div>
+				<div class="countdown-item">
+					<span id="id_min" class="time-number">56</span>
+					<span class="time-text">minutes</span>
+				</div>
+				<div class="countdown-item">
+					<span id="id_sec" class="time-number">78</span>
+					<span class="time-text">seconds</span>
+				</div>
 			</div>
 		</div>
 	</div>
 
+
+
     <!-- logos -->
-    <div class="container">
-        <div class="d-flex justify-content-center ">
-          <div class="p-5">
-			<a href="https://www.linkedin.com/in/zieddridi/" target="_blank" class="logo social">
-				<i class="fa fa-linkedin"></i>
-			</a>
-          </div>
-          <div class="p-5">
-			<a href="https://github.com/zDridi" target="_blank" class="logo social">
-				<i class="fa fa-github"></i>
-			</a>
-          </div>
-          <div class="p-5">
-			<a href="https://stackoverflow.com/" target="_blank" class="logo social">
-				<i class="fa fa-stack-overflow"></i>
-			</a>
-          </div>
+    <div class="container-logos">
+        <div class="container-box"> <!-- bootstrap class-->
+            <div class="d-flex justify-content-center ">
+              <div class="p-3">
+                <a href="https://www.linkedin.com/in/zieddridi/" target="_blank" class="logo social">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="p-3">
+                <a href="https://github.com/zDridi" target="_blank" class="logo social">
+                    <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div class="p-3">
+                <a href="https://stackoverflow.com/" target="_blank" class="logo social">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+              </div>
+            </div>
         </div>
     </div>
+
 
     <!-- javaScript -->
     <script type="text/javascript" src="js/main.js" ></script>   

@@ -22,34 +22,106 @@ body {
 /*////////////////////////////////////////////////////////////////
 [ Name & title ]*/
 
-.my-name{
-  font-family: Roboto-Black;
+.container-my-name{
   position: absolute;
-  top: 4%;
-  left: 1%;
-  /* text-align: center; */
-  font-size: 1em;
+  margin: 0 auto;
+  top: 8%;
+  left: 0;
+  right: 0;
+
+  /* position: absolute;
+  top: 8%;
+  left: 25%; */
+  text-align: center;
+}
+
+.my-name{
+  /* position: relative; */
+  font-family: Roboto-Black;
   font-weight: bold;
   color: white;
-  letter-spacing: 3px;
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (min-width: 320px) {
+  .my-name{ font-size: 8px; letter-spacing: 2px;}
+}
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+  .my-name{ font-size: 10px; letter-spacing: 3px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .my-name{ font-size: 12px; letter-spacing: 4px;}
+} 
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .my-name{ font-size: 14px; letter-spacing: 5px;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .my-name{ font-size: 16px; letter-spacing: 6px;}
 }
 
 /*////////////////////////////////////////////////////////////////
 [ Coming Soon text ]*/
 
-.title-cs {
+.container-coming-soon {
   position: absolute;
+  margin: 0 auto;
+  top: 20%;
+  left: 0;
+  right: 0;
+  width: 60%;
   text-align: center;
-  top: 22%;
-  left: 27%;
-  /* padding-bottom: 60px; */
+
+  /* background: rgba(196, 53, 53, 0.397); */
+}
+
+.title-coming-soon {
+  position: relative;
+  text-align: center;
   font-family: Lato-Thin;
-  font-size: 4em;
+  /* font-size: 64px; */
   line-height: 1.1;
   color: whitesmoke;
   text-transform: uppercase;
   letter-spacing: 25px;
   z-index: 3;
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (min-width: 320px) {
+  .container-coming-soon {width: 80%;}
+  .title-coming-soon { font-size: 24px; letter-spacing: 6px;}
+}
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+  .container-coming-soon {width: 80%;}
+  .title-coming-soon { font-size: 30px; letter-spacing: 10px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container-coming-soon {width: 80%;}
+  .title-coming-soon { font-size: 36px; letter-spacing: 12px;}
+} 
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .container-coming-soon {width: 80%;}
+  .title-coming-soon { font-size: 42px; letter-spacing: 14px;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .container-coming-soon {width: 80%;}
+  .title-coming-soon { font-size: 64px; letter-spacing: 18px;}
 }
 
 /*////////////////////////////////////////////////////////////////
@@ -179,103 +251,132 @@ body {
 /*////////////////////////////////////////////////////////////////
 [ countdown ]*/
 
-.countdown-box{
-  background-color: rgba(0,0,0, 0.7); 
-  color: white;
-  border: none;
+.container-countdown-box{
   position: absolute;
-  top: 53%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 70%;
-  text-align: center;
-
-  
-	-webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
-	-o-flex-direction: column;
-  flex-direction: column;
-  
-  display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-  display: flex;
-  
-  -ms-align-items: center;
-	align-items: center;
-  justify-content: center;
-  
-  padding-top: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 0px;
+  margin: 0 auto;
+  top: 35%;
+  left: 0;
+  right: 0;
 }
 
-.countdown-content{
-  display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-  display: flex;
 
-  
-  -webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-  flex-wrap: wrap;
-  
-  justify-content: center;
-	-ms-align-items: center;
-	align-items: center;
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (min-width: 320px) {
+	.countdown-box {
+		position: relative;
+		padding: 5px;
+    height: 50px;
+    color: #FFF;
+    /* background: red; */
+	}
+	.countdown-content {
+		width: 60%;
+		height: 100%;
+		margin: 0 auto;
+		padding: 24px;
+		
+		box-sizing: border-box;
+		background-color: rgba(8, 8, 8, 0.6); 
+		border-radius: 4px;
+		box-shadow: 0px 3px 30px -10px white;
+	
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.countdown-item {
+		width: 28%;
+		display: flex;
+		flex-flow: column wrap;
+    align-self: center;
+	}
+	
+	.time-number {
+    font-family: Roboto-Black;
+    font-size: 20px;
+    height: 68%;
+	}
+	
+	.time-text {
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+    font-size: 5px;
+	}
 }
-
-.countdown-item{
-  width: 195px;
-  margin-bottom: 30px;
-
-  display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-  display: flex;
   
-  -ms-align-items: center;
-  align-items: center;
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+	.countdown-box {
+		height: 110px;
+	}
+
+	.time-number {
+		font-size: 40px;
+	}
+	
+	.time-text {
+		font-size: 8px;
+	}	
+}
   
-  -webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
-	-o-flex-direction: column;
-  flex-direction: column;
-}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.countdown-box {
+		height: 150px;
+	}
+	.time-number {
+		font-size: 70px;
+	}
+	
+	.time-text {
+		font-size: 10px;
+	}
+} 
+  
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+	.countdown-box {
+		height: 245px;
+	}
+	.time-number {
+		font-size: 90px;
+	}
+	
+	.time-text {
+		font-size: 15px;
+	}
+} 
+  
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
 
-.time-number{
-  font-family: Roboto-Black;
-  font-size: 120px;
-  line-height: 1;
-  color: white;
-  padding-bottom: 9px;
+	.countdown-box {
+		height: 245px;
+	}
+	
+	.time-number {
+		font-size: 120px;
+	}
+	
+	.time-text {
+		font-size: 20px;
+	}
 }
-
-.time-text{
-  align-self: flex-start;
-  padding-left: 35px;
-}
-
 
 /*////////////////////////////////////////////////////////////////
 [ Social media logos ]*/
 
-.container{
+.container-logos{
   position: absolute;
-  /* font-size: 3em; */
-  left: 10%;
-  bottom: 1%;
-  color: white;
+  margin: auto;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.container-box{
+  position: relative;
 }
 
 .logo{
@@ -304,22 +405,78 @@ body {
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  /* font: normal normal normal 14px/1 FontAwesome; */
+  /* font-size: inherit; */
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .social {
-  color: #fff;
+
+  color: white;
   font-size: 18px;
-  border: 1px solid #fff;
+  border: 1px solid white;
   background-color: transparent;
   border-radius: 50%;
 }
 
 .social:hover {
-  background-color: #fff;
-  color: #555;
+  background-color: white;
+  color: black;
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (min-width: 320px) {
+  .logo{
+    width: 30px;
+    height: 30px;
+  }
+  .fa {
+    font-size: 16px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+  .logo{
+    width: 24px;
+    height: 24px;
+  }
+  .fa {
+    font-size: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .logo{
+    width: 26px;
+    height: 26px;
+  }
+  .fa {
+    font-size: 12px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .logo{
+    width: 28px;
+    height: 28px;
+  }
+  .fa {
+    font-size: 14px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .logo{
+    width: 30px;
+    height: 30px;
+  }
+  .fa {
+    font-size: 16px;
+  }
 }
